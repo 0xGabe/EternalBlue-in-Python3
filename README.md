@@ -2,7 +2,7 @@
 
 How to use
 
-git clone https://github.com/Gabriel-Lima232/EternalBlue-in-Python3.git
+```git clone https://github.com/Gabriel-Lima232/EternalBlue-in-Python3.git```
 
 Compiling the shellcode(s)
 

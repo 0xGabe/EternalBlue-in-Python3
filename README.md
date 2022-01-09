@@ -13,13 +13,13 @@ git clone https://github.com/Gabriel-Lima232/EternalBlue-in-Python3.git
 ### x64
 
 ```
-nasm -f bin MS17-010/shellcode/eternalblue_kshellcode_x64.asm -o ./sc_x64_kernel.bin
+nasm -f bin shellcode/eternalblue_x64.asm -o ./sc_x64_kernel.bin
 ```
 
 ### x86
 
 ```
-nasm -f bin MS17-010/shellcode/eternalblue_kshellcode_x86.asm -o ./sc_x86_kernel.bin
+nasm -f bin shellcode/eternalblue_x86.asm -o ./sc_x86_kernel.bin
 ```
 
 ### Create a Bin

